@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Quizzy</h1>
+    <label for="label" id="level">Select Level</label>
+    <select name="label" id="label">
+        <option value="1" class="lvl">level 1</option>
+        <option value="2" class="lvl">level 2</option>
+        <option value="3" class="lvl">level 3</option>
+        <option value="4" class="lvl">level 4</option>
+    </select>
+    <div class="question">
+        <h3 id="qno"></h3>
+        <ul>
+            <li><input type="radio" name="options" class="op" value="1"><p id="op1"></p></li>
+            <li><input type="radio" name="options" class="op" value="2"><p id="op2"></p></li>
+            <li ><input type="radio" name="options" class="op" value="3"><p id="op3"></p></li>
+        </ul>
+        <h4 id="result"></h4>
+        <button class="submit" type="submit" onclick="submitter()">Submit</button>
+        <button class="next" onclick="next()">Next Question</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" ></script>
+    <script src="./app.js"></script>
+</body>
+</html>
