@@ -1,6 +1,6 @@
 let answer;
-function level(){
-    
+
+function level(){   //this extracts the value of selected level option
     var selectBox = document.getElementById("label");
     var selectedValue = selectBox.value;
     getter(selectedValue);
